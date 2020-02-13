@@ -1,0 +1,91 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+
+}
+
+#product-svg {
+    position: relative;
+    z-index: 2;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    mix-blend-mode: multiply;
+}
+
+#product-shape {
+    fill: #DBED64;
+}
+
+#background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    width: 40.14px;
+    height: 40.14px;
+}
+
+.colors {
+    display: flex;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    z-index: 3;
+}
+
+.color {
+    height: 36px;
+    width: 36px;
+    margin-left: 0.5em;
+    border-radius: 18px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid #aaa;
+    cursor: pointer;
+}
+
+.shirt-section {
+    width: 100%;
+    height: 50vh;
+    border: solid 1px
+}
+
+.picker-section {
+    width: 100%;
+    height: 50vh;
+    border: solid 1px
+}
+
+@media only screen and (min-width: 1024px) {
+
+    body {
+        display: flex;
+    }
+
+    .shirt-section {
+        width: 50%;
+        height: 100vh;
+    }
+
+    .picker-section {
+        width: 50%;
+        height: 100vh;
+    }
+
+}
